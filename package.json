@@ -1,0 +1,90 @@
+{
+  "name": "pipedrive-embeddable-engage-phone",
+  "version": "0.1.0",
+  "description": "Experimental Engage Voice browser extension for PipeDrive",
+  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/cross-env NODE_ENV=production ./node_modules/.bin/webpack --progress -w",
+    "start": "npm run build",
+    "postinstall": "node bin/post-install",
+    "lint": "./node_modules/.bin/standard",
+    "fix": "./node_modules/.bin/standard --fix",
+    "clean": "rm -rf dist dist-firefox",
+    "pack": "npm run clean && ./node_modules/.bin/cross-env NODE_ENV=production ./node_modules/.bin/webpack --progress && node bin/pack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ringcentral/pipedrive-embeddable-engage-phone.git"
+  },
+  "keywords": [
+    "RingCentral",
+    "Hubspot",
+    "embeddable",
+    "phone"
+  ],
+  "author": "ZHAO Xudong <zxdong@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ringcentral/pipedrive-embeddable-engage-phone/issues"
+  },
+  "homepage": "https://github.com/ringcentral/pipedrive-embeddable-engage-phone#readme",
+  "devDependencies": {
+    "@ant-design/icons": "^4.0.6",
+    "@babel/cli": "7.4.3",
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-proposal-class-properties": "7.4.0",
+    "@babel/plugin-proposal-decorators": "7.4.0",
+    "@babel/plugin-proposal-json-strings": "7.2.0",
+    "@babel/plugin-syntax-dynamic-import": "7.2.0",
+    "@babel/plugin-transform-runtime": "7.4.3",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.9.4",
+    "@babel/register": "7.4.0",
+    "@babel/runtime": "7.4.3",
+    "antd": "4.1.4",
+    "babel-eslint": "10.0.1",
+    "babel-loader": "8.0.5",
+    "babel-plugin-import": "1.10.0",
+    "babel-plugin-lodash": "3.3.4",
+    "concat-loader": "0.1.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "cross-env": "5.1.6",
+    "css-loader": "^2.1.1",
+    "dayjs": "1.7.7",
+    "extract-loader": "2.0.1",
+    "file-loader": "1.1.11",
+    "happypack": "5.0.0",
+    "html-loader": "0.5.5",
+    "jquery": "^3.4.1",
+    "json-deep-copy": "^1.1.1",
+    "less": "^3.11.1",
+    "less-loader": "^5.0.0",
+    "lodash-webpack-plugin": "0.11.5",
+    "moment": "2.23.0",
+    "npm-run-all": "4.1.3",
+    "postcss-loader": "^3.0.0",
+    "postcss-rename-selector": "^0.1.1",
+    "pug-html-loader": "1.1.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "recursive-assign": "0.2.0",
+    "replace-in-file": "^5.0.2",
+    "ringcentral-embeddable-extension-common": "0.9.5",
+    "shelljs": "0.8.2",
+    "standard": "^12.0.1",
+    "style-loader": "0.23.1",
+    "stylus": "0.54.5",
+    "stylus-loader": "3.0.2",
+    "url-loader": "1.1.2",
+    "webpack": "4.32.2",
+    "webpack-cli": "3.3.0",
+    "webpack-dev-server": "3.3.1",
+    "webpack-extraneous-file-cleanup-plugin": "2.0.0"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "globals": [
+      "chrome"
+    ]
+  }
+}

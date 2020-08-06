@@ -6,7 +6,7 @@ Created with [ringcentral-embeddable-extension-factory](https://github.com/ringc
 
 ## Video
 
-todo
+[https://youtu.be/Utvhh1GXiuk](https://youtu.be/Utvhh1GXiuk)
 
 ## Features
 
